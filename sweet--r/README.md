@@ -12,7 +12,7 @@ time sudo docker build --build-arg CACHE_DATE=$(date +%Y-%m-%d) -t sweetr .
 
 ```
 
-or type 'sudo make build_image` instead.
+or type `sudo make build_image` instead.
 
 
 ## Run a container based on the image
