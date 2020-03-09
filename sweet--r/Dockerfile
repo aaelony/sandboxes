@@ -9,7 +9,7 @@ RUN R CMD javareconf
 
 ENV MAKE="make -j4"
 
-RUN install2.r ROCR data.table curl coda mvtnorm loo dagitty h2o
+RUN install2.r --error ROCR data.table curl coda mvtnorm loo dagitty h2o
 
 
 ARG CACHE_DATE
