@@ -1,5 +1,7 @@
 
-The following directory is meant to house a Dockerfile that builds an Rstudio environment
+# sweetr
+
+The following directory is meant to house a Dockerfile that builds an R environment
 with a get of _useful_ libraries preinstalled.
 
 
