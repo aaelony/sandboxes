@@ -22,6 +22,9 @@ RUN git clone --recursive https://github.com/dmlc/xgboost && \
 
 RUN R -e 'devtools::install_github("Laurae2/lgbdl"); lgbdl::lgb.dl()'
 
+RUN install2.r rstanarm
+## ^^^ completes, but doesn't actually install rstanarm...?
+
 ## These commented installs don't work
 ## RUN Rscript -e 'devtools::install_github("rmcelreath/rethinking")'
 ##  RUN Rscript -e 'devtools::install_github("paul-buerkner/brms", "stan-dev/rstanarm")'
