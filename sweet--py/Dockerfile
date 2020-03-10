@@ -16,7 +16,7 @@ RUN python -m pip install \
         realpython-reader
 RUN python -m pip install --upgrade pip
 RUN python -m pip install numpy>=1.18.1 scipy scikit-learn seaborn pandas matplotlib \
-	tensorflow>=2.1 keras torch torchvision h2o
+	tensorflow>=2.1 keras torch torchvision h2o pytest
 
 
 
