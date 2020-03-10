@@ -15,8 +15,8 @@ ENV PATH "$VIRTUAL_ENV/bin:$PATH"
 RUN python3 -m pip install --upgrade pip && \
 	python3 -m pip install setuptools>=41.0.0 Theano
 RUN python3 -m pip install parse realpython-reader \
-	numpy>=1.18.1 scipy scikit-learn seaborn pandas matplotlib \
-	tensorflow>=2.1 keras torch torchvision h2o pytest pymc3
+	numpy>=1.18.1 scipy scikit-learn seaborn pandas matplotlib bokeh \
+	statsmodels tensorflow>=2.1 keras torch torchvision h2o pytest pymc3
 
 
 
