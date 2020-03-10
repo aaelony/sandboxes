@@ -1,4 +1,5 @@
-FROM rocker/tidyverse
+## FROM rocker/tidyverse
+FROM r-ubuntu:18.04
 
 RUN apt-get update && \
 	apt-get install -y default-jdk-headless cmake \
