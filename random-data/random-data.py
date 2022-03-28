@@ -13,7 +13,8 @@ def random_df(nrows=5):
          'age' : np.random.randint(low=18, high=80, size= nrows, dtype=int),
          'visit_date' : [np.random.choice(pd.date_range(start='2020-01-01', end=date.today() )) for i in range(nrows)],
          'visits' : np.random.default_rng().poisson(lam=1.0, size=nrows),
-         'paidamt' : np.random.default_rng().normal(loc=100.0, scale=90.0, size=nrows).round(decimals=2)
+         'paidamt' : np.random.default_rng().normal(loc=100.0, scale=90.0, size=nrows).round(decimals=2),
+         'wts' : np.random.uniform(low=0, high=1)
         })
     return df
 
